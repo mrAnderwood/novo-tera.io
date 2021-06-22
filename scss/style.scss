@@ -1331,14 +1331,6 @@ p{
 	&__wrap{
 		width: 100%;
 	}
-	&__hint{
-		display: none;
-		width: 30px;
-		height: 30px;
-		margin: 0 0 15px auto;
-		background: url('../img/icons/scroll-hint.svg') no-repeat center;
-		background-size: 100%;
-	}
 	&__table{
 		width: 100%;
 		border-collapse: collapse;
@@ -1349,6 +1341,15 @@ p{
 	&__btn{
 		padding: 10px 0;
 		min-width: 10.9375em;
+	}
+
+	&__hint{
+		display: none;
+		width: 40px;
+		height: 40px;
+		margin: 25px auto 0 auto;
+		background: url('../img/icons/scroll-hint.svg') no-repeat center;
+		background-size: 100%;
 	}
 
 
@@ -2942,6 +2943,15 @@ p{
 		}
 	}
 
+	.features{
+		&__title-block{
+			text-align: center;
+		}
+		&__item{
+			text-align: center;
+		}
+	}
+
 	.cta{
 		margin: 60px 0;
 		.title-h2{
@@ -3104,11 +3114,7 @@ p{
 			td{
 				padding-top: 11px;
 				padding-bottom: 11px;
-			}
-			&:not(:last-child){
-				td{
-					border-bottom: 1px solid #91CCF2;
-				}
+				border-bottom: 1px solid #91CCF2;
 			}
 		}
 	}
