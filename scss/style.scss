@@ -1879,7 +1879,7 @@ p{
 
 	&__feedback{
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 		grid-gap: 30px;
 		margin: 40px 0 0 0;
 	}
@@ -2550,11 +2550,12 @@ p{
 			grid-auto-flow: column;
 			grid-template-rows: repeat(2, 1fr);
 			justify-content: space-between;
-			grid-gap: 15px 25px;
+			grid-gap: 15px 0;
 		}
 		&__link{
 			margin: 0;
 			order: 1;
+			width: 100%;
 		}
 		&__callback{
 			order: 3;
@@ -2720,6 +2721,10 @@ p{
 		min-width: 150px;
 		padding: 9px 20px;
 	}
+	.btn-wide{
+		width: 100%;
+	}
+
 	.form{
 		margin-top: 20px;
 
@@ -3031,7 +3036,11 @@ p{
 		&__iframe{
 			height: 75vw;
 			margin: 30px -15px 0 0;
-			width: calc( 100% + 15px);
+			
+		}
+		.appeal &__iframe{
+			width: 100%;
+			margin: 30px 0 0 0;
 		}
 	}
 
@@ -3079,8 +3088,28 @@ p{
 	}
 
 	.price-list{
+
+
+		&__table{
+			max-width: 50em;
+		}
+		&__btn{
+			padding: 8px 0;
+		}
+
 		tr td{
 			padding-top: 15px;
+		}
+		tr{
+			td{
+				padding-top: 11px;
+				padding-bottom: 11px;
+			}
+			&:not(:last-child){
+				td{
+					border-bottom: 1px solid #F2F2F2;
+				}
+			}
 		}
 	}
 	.price-list th:first-child, .price-list td:first-child{
@@ -3205,6 +3234,9 @@ p{
 		}
 		&__title{
 			margin: 0 0 20px 0;
+		}
+		&__link{
+			width: 100%;
 		}
 	}
 
@@ -3383,12 +3415,6 @@ p{
 	.appeal{
 		&__iframe{
 			margin: 30px -10px 0 0;
-		}
-	}
-
-	.price-list{
-		&__table{
-			max-width: 50em;
 		}
 	}
 
